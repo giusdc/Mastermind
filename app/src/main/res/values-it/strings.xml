@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mastermind-Android Society</string>
+    <string name="what_is_mastermind">Che cos\'è Mastermind?</string>
+    <string name="mastermind_is_a_code_breaking_game_where_you_can_squeeze_your_brains_against_the_computer">Mastermind è un gioco rompicapo, nel quale dovrete spremere le vostre meningi contro il computer.</string>
+    <string name="the_game_is_played_using">Il gioco è composto da:</string>
+    <string name="good_luck">"BUONA FORTUNA! "</string>
+    <string name="end_of_the_game">Fine del gioco</string>
+    <string name="gameplay_and_rules">Modalità di gioco e regole</string>
+    <string name="a_de_coding_board_a_matrix_10x4_or_10x5_depending_on_the_selected_difficulty_where_the_codebreaker_tries_to_guess_the_pattern_in_both_order_and_color_within_ten_turns_each_guess_is_made_by_placing_a_row_of_code_pegs_on_the_decoding_board">- Una tavola di decodifica, cioè una matrice 10X4 (o 10X5, dipendentemente dalla difficoltà scelta), dove voi dovrete tentare di scoprire la sequenza di colori scelta casualmente dal computer in massimo 10 tentativi. Ogni tentativo consiste nell\'inserire le palle colorate nei buchi della riga della tavola.</string>
+    <string name="if_you_figure_out_the_hidden_code_before_the_tenth_attempt_you_win">Cliccate sulla freccia verde per verificare la vostra sequenza. Se riuscite a scoprire la sequenza di colori segreta prima dell\'ultimo tentativo/riga, avete vinto!</string>
+    <string name="eight_or_ten_pegs_with_different_color_once_placed_the_codemaker_the_cpu_provides_feedback_by_placing_from_zero_to_four_key_pegs_in_the_small_holes_of_the_row_with_the_guess_a_black_key_peg_is_placed_for_each_code_peg_from_the_guess_which_is_correct_in_both_color_and_position_a_white_key_peg_indicates_the_existence_of_a_correct_color_code_peg_placed_in_the_wrong_position">- Otto (o dieci) palle con colori differenti. Una volta inserita la propria sequenza, la CPU provvede inserendo al lato della riga nei 4 piccoli fori fino a 4 palline bianche o nere. In particolare, inserirà una pallina nera se avrete inserito una palla di colore e posizione corretta, bianca altrimenti se avrete indovinato solo il colore ma non la posizione!</string>
+    <string name="high_scores">High scores</string>
+    <string name="instruction">Istruzioni</string>
+    <string name="new_game">Nuova partita</string>
+    <string name="challenge_your_limits_10_colors_5_holes">Sfida i tuoi limiti: 10 colori, 5 buchi</string>
+    <string name="easy">Facile</string>
+    <string name="for_beginners_8_colors_4_holes">Per principianti: 8 colori, 4 buchi</string>
+    <string name="for_expert_users_10_colors_4_holes">Per giocatori esperti: 10 colori, 4 buchi</string>
+    <string name="hard">Difficile</string>
+    <string name="medium">Medio</string>
+    <string name="attempts">Tentativi</string>
+    <string name="data">Data</string>
+    <string name="difficulty">Difficoltà</string>
+    <string name="name">Nome</string>
+    <string name="result">Risultato</string>
+    <string name="enter_your_name">Inserisci il nome</string>
+    <string name="ok">Salva e torna indietro</string>
+    <string name="you_win">"HAI VINTO! "</string>
+    <string name="back">Indietro</string>
+    <string name="try_again">Riprova</string>
+    <string name="you_lose">HAI PERSO!</string>
+    <string name="select_the_level_of_difficulty">Seleziona il livello di difficoltà:</string>
+    <string name="The_correct_sequence_is">La sequenza corretta è:</string>
+    <string name="col">Scegli il colore</string>
+    <string name="toast">Attenzione! Inserisci un nome!</string>
+    <string name="txtLevelHard">Livello Difficile</string>
+    <string name="txtLevelEasy">Livello Facile</string>
+    <string name="txtLevelNormal">Livello Medio</string>
+</resources>

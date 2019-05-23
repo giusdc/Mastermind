@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/wood_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="UselessLeaf"></LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:typeface="serif"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="cursive"
+            android:textSize="30sp"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp61"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp62"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/smallp61"
+            android:layout_marginStart="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp63"
+
+            android:layout_below="@+id/smallp61"
+            android:layout_toEndOf="@+id/pegslot61"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp64"
+            android:layout_below="@+id/smallp62"
+            android:layout_alignStart="@+id/smallp62"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot63"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot62"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/freccia_vuota"
+            android:id="@+id/arrow6"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/smallp61"
+            android:layout_toStartOf="@+id/pegslot64"
+            android:onClick="confirmRow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot61"
+            android:layout_marginEnd="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smallp61"
+            android:onClick="clickHole"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot62"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot61"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot64"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot63"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp51"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp52"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/smallp51"
+            android:layout_marginStart="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp53"
+
+            android:layout_below="@+id/smallp51"
+            android:layout_toEndOf="@+id/pegslot51"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp54"
+            android:layout_below="@+id/smallp52"
+            android:layout_alignStart="@+id/smallp52"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot51"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smallp51"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot52"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot51"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot53"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot52"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot54"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot53"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/freccia_vuota"
+            android:id="@+id/arrow5"
+            android:layout_below="@+id/smallp51"
+            android:layout_toStartOf="@+id/pegslot54"
+            android:layout_marginEnd="16dp"
+            android:onClick="confirmRow"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp41"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp42"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/smallp41"
+            android:layout_marginStart="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp43"
+
+            android:layout_below="@+id/smallp41"
+            android:layout_toEndOf="@+id/pegslot41"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp44"
+            android:layout_below="@+id/smallp42"
+            android:layout_alignStart="@+id/smallp42"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot42"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot41"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot43"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot42"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot44"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot43"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/freccia_vuota"
+            android:id="@+id/arrow4"
+            android:layout_below="@+id/smallp41"
+            android:layout_toStartOf="@+id/pegslot44"
+            android:layout_marginEnd="16dp"
+            android:onClick="confirmRow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot41"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smallp41"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp31"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp32"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/smallp31"
+            android:layout_marginStart="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp33"
+
+            android:layout_below="@+id/smallp31"
+            android:layout_toEndOf="@+id/pegslot31"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp34"
+            android:layout_below="@+id/smallp32"
+            android:layout_alignStart="@+id/smallp32"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot31"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smallp31"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot32"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot31"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot33"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot32"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot34"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot33"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/freccia_vuota"
+            android:id="@+id/arrow3"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/smallp31"
+            android:layout_toStartOf="@+id/pegslot34"
+            android:onClick="confirmRow"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp21"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp22"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/smallp21"
+            android:layout_marginStart="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp23"
+
+            android:layout_below="@+id/smallp21"
+            android:layout_toEndOf="@+id/pegslot21"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp24"
+            android:layout_below="@+id/smallp22"
+            android:layout_alignStart="@+id/smallp22"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot23"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot22"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot24"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot23"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/freccia_vuota"
+            android:id="@+id/arrow2"
+            android:layout_below="@+id/smallp21"
+            android:layout_toStartOf="@+id/pegslot24"
+            android:layout_marginEnd="16dp"
+            android:onClick="confirmRow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot21"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smallp21"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot22"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot21"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp11"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp12"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/smallp11"
+            android:layout_marginStart="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp13"
+
+            android:layout_below="@+id/smallp11"
+            android:layout_toEndOf="@+id/pegslot11"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp14"
+            android:layout_below="@+id/smallp12"
+            android:layout_alignStart="@+id/smallp12"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot12"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot11"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot14"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot13"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/freccia_vuota"
+            android:id="@+id/arrow1"
+            android:layout_below="@+id/smallp11"
+            android:layout_toStartOf="@+id/pegslot14"
+            android:layout_marginEnd="16dp"
+            android:onClick="confirmRow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot11"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smallp11"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot13"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot12"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp01"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp02"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/smallp01"
+            android:layout_marginStart="20dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp03"
+
+            android:layout_below="@+id/smallp01"
+            android:layout_toEndOf="@+id/pegslot01"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot01"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/smallp01"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot03"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot02"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot04"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot03"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/freccia_selezionata"
+            android:id="@+id/arrow0"
+            android:layout_marginEnd="16dp"
+            android:layout_below="@+id/smallp01"
+            android:layout_toStartOf="@+id/pegslot04"
+            android:onClick="confirmRow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            app:srcCompat="@drawable/smallpeg_vuoto"
+            android:id="@+id/smallp04"
+            android:layout_below="@+id/smallp02"
+            android:layout_alignStart="@+id/smallp02"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/pegslot"
+            android:id="@+id/pegslot02"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pegslot01"
+            android:onClick="clickHole"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        tools:ignore="UselessLeaf">
+
+    </LinearLayout>
+
+
+</LinearLayout>

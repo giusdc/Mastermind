@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.riccardochiaretti.mastermind.InstructionActivity"
+        tools:ignore="ScrollViewSize">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtView1"
+                android:text="@string/what_is_mastermind"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <TextView
+                android:text="@string/mastermind_is_a_code_breaking_game_where_you_can_squeeze_your_brains_against_the_computer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtView2"
+                android:layout_marginTop="24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <TextView
+                android:text="@string/gameplay_and_rules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtView3"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <TextView
+                android:text="@string/the_game_is_played_using"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtView4"
+                android:layout_marginTop="24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <TextView
+                android:text="@string/a_de_coding_board_a_matrix_10x4_or_10x5_depending_on_the_selected_difficulty_where_the_codebreaker_tries_to_guess_the_pattern_in_both_order_and_color_within_ten_turns_each_guess_is_made_by_placing_a_row_of_code_pegs_on_the_decoding_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtView5"
+                android:layout_marginTop="18dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/empty_row"
+                android:id="@+id/imgViewNotFull"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:text="@string/eight_or_ten_pegs_with_different_color_once_placed_the_codemaker_the_cpu_provides_feedback_by_placing_from_zero_to_four_key_pegs_in_the_small_holes_of_the_row_with_the_guess_a_black_key_peg_is_placed_for_each_code_peg_from_the_guess_which_is_correct_in_both_color_and_position_a_white_key_peg_indicates_the_existence_of_a_correct_color_code_peg_placed_in_the_wrong_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:id="@+id/txtView6"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fullrow"
+                android:layout_marginTop="40dp"
+                android:id="@+id/imgViewFull"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:text="@string/end_of_the_game"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:id="@+id/txtView7" />
+
+            <TextView
+                android:text="@string/if_you_figure_out_the_hidden_code_before_the_tenth_attempt_you_win"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                android:id="@+id/txtView8" />
+
+            <TextView
+                android:text="@string/good_luck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:id="@+id/txtView9" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

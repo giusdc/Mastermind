@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_selection_difficulty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:text="@string/easy"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnEasy"
+                android:layout_width="150dp"
+                android:background="@drawable/custom_buttons"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:text="@string/for_beginners_8_colors_4_holes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtViewEasy"
+                android:layout_weight="1"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
+                tools:ignore="InefficientWeight" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:text="@string/medium"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnMedium"
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:background="@drawable/custom_buttons"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:text="@string/for_expert_users_10_colors_4_holes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtViewNormal"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:text="@string/hard"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnHard"
+                android:layout_weight="1"
+                android:layout_width="150dp"
+                android:background="@drawable/custom_buttons"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:text="@string/challenge_your_limits_10_colors_5_holes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtViewHard"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/select_the_level_of_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:id="@+id/txtViewChoise"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
